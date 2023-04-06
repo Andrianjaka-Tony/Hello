@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\S4\\Programmation\\Canal\\wwwroot\\css\\Client\\Clients.css",
+      "PackagePath": "staticwebassets\\css\\Client\\Clients.css"
+    },
+    {
+      "Id": "D:\\S4\\Programmation\\Canal\\wwwroot\\css\\Client\\OneClient.css",
+      "PackagePath": "staticwebassets\\css\\Client\\OneClient.css"
+    },
+    {
+      "Id": "D:\\S4\\Programmation\\Canal\\wwwroot\\css\\reset.css",
+      "PackagePath": "staticwebassets\\css\\reset.css"
+    },
+    {
+      "Id": "D:\\S4\\Programmation\\Canal\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\S4\\Programmation\\Canal\\wwwroot\\font\\Poppins.ttf",
+      "PackagePath": "staticwebassets\\font\\Poppins.ttf"
+    },
+    {
+      "Id": "D:\\S4\\Programmation\\Canal\\wwwroot\\image\\user.png",
+      "PackagePath": "staticwebassets\\image\\user.png"
+    },
+    {
+      "Id": "D:\\S4\\Programmation\\Canal\\wwwroot\\js\\Client\\Reabonnement.js",
+      "PackagePath": "staticwebassets\\js\\Client\\Reabonnement.js"
+    },
+    {
+      "Id": "D:\\S4\\Programmation\\Canal\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Canal.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Canal.props",
+      "PackagePath": "build\\Canal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Canal.props",
+      "PackagePath": "buildMultiTargeting\\Canal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Canal.props",
+      "PackagePath": "buildTransitive\\Canal.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,32 @@
+@{
+  List<string[]> listClients = (List<string[]>) ViewData["list-clients"]; // * ClientModel.findAll
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="~/css/reset.css">
+  <link rel="stylesheet" href="~/css/Client/Clients.css">
+
+</head>
+<body>
+  
+  <div class="client-container">
+    @for (int i = 0; i < listClients.Count; i++) {
+      <a href="/Client/OneClient?id_client=@listClients[i][0]" class="link-client">
+        <img src="~/image/user.png" alt="">
+        <div class="client">
+          <p class="client-name">@listClients[i][1]</p>
+          <p class="client-location">@listClients[i][2]</p>
+        </div>
+      </a>
+    }
+  </div>
+
+</body>
+</html>

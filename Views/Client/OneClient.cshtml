@@ -1,0 +1,75 @@
+@{
+  string[] client = (string[]) ViewData["client"]; // * ClientModel.findOne
+  List<string[]> subscriptions = (List<string[]>) ViewData["subscriptions"]; // * ClientModel.findAllSubscriptions
+  List<string[]> allBunches = (List<string[]>) ViewData["all-bunches"]; // * ClientModel.findAllBunches
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="~/css/reset.css">
+  <link rel="stylesheet" href="~/css/Client/OneClient.css">
+
+</head>
+<body>
+
+  <div style="display: none;" id="id_client">@client[0]</div>
+  
+  <header class="header">
+    <img src="~/image/user.png" class="user-image">
+    <div class="infos">
+      <h1 class="client-name">@client[1]</h1>
+      <p class="client-location">@client[2]</p>
+      <p class="client-frequence">@client[3]</p>
+    </div>
+  </header>
+
+  <main class="bouquets">
+    <h1 class="title">Reabonnement</h1>
+    @for (int i = 0; i < allBunches.Count; i++) {
+      <div data-id_bouquet="@allBunches[i][0]" class="bouquet">
+        <h1 class="nom-bouquet">@allBunches[i][1]</h1>
+        <h2 class="prix-sans-remise">@allBunches[i][2] Ar TTC</h2>
+        <h2 class="prix-avec-remise">@allBunches[i][3] Ar TTC -@allBunches[i][4]%</h2>
+      </div>
+    }
+  </main>
+
+  <main class="subscriptions-container">
+    <h1 class="title">Liste des abonnements</h1>
+    <table class="table">
+      <tr class="table-header">
+        <td class="abonnement">Abonnement</td>
+        <td class="bouquet-col">Bouquet</td>
+        <td class="remise">Remise</td>
+
+        <a href="/Client/"></a>
+        <td class="prix">Prix</td>
+        <td class="date">Date</td>
+        <td class="date">Debut</td>
+        <td class="date">Fin</td>
+      </tr>
+      @for (int i = 0; i < subscriptions.Count; i++) {
+        <tr>
+          <td class="abonnement">@subscriptions[i][2]</td>
+          <td class="bouquet-col">@subscriptions[i][3]</td>
+          <td class="remise">@subscriptions[i][4]</td>
+          <td class="prix">@subscriptions[i][5]</td>
+          <td class="date">@subscriptions[i][6]</td>
+          <td class="date">@subscriptions[i][7]</td>
+          <td class="date">@subscriptions[i][8]</td>
+        </tr>
+      }
+    </table>
+  </main>
+
+
+  <script defer src="~/js/Client/Reabonnement.js"></script>
+
+</body>
+</html>

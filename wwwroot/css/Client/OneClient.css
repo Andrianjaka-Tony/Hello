@@ -1,0 +1,185 @@
+.header {
+  width: 100vw;
+  height: 120px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.user-image {
+  width: 120px;
+}
+
+.infos {
+  margin-left: 10px;
+  font-family: Poppins;
+}
+
+.client-name {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.client-location {
+  font-size: 16px;
+}
+
+.client-frequence {
+  font-size: 12px;
+}
+
+.subscriptions-container {
+  width: calc(100vw - 40px);
+  padding: 20px;
+  overflow: scroll;
+}
+
+.subscriptions-container .title {
+  font-family: Poppins;
+  font-size: 21px;
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+
+.table {
+  width: 100%;
+  margin-top: 10px;
+  overflow-x: scroll;
+}
+
+tr {
+  font-family: Poppins;
+  display: inline-flex;
+  gap: 2px;
+  margin-top: 2px;
+}
+
+.table-header {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.table-header td {
+  padding: 20px 20px;
+  background: rgba(2, 40, 61, 0.201);
+}
+
+td {
+  font-size: 12px;
+  padding: 10px 20px;
+}
+
+.abonnement {
+  width: 160px;
+}
+
+.bouquet-col {
+  width: 220px;
+}
+
+.remise {
+  width: 70px;
+}
+
+.prix {
+  width: 100px;
+}
+
+.date {
+  width: 150px;
+}
+
+.bouquets {
+  padding: 20px;
+  width: calc(100% - 40px);
+  display: inline-flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bouquets .title {
+  width: 100%;
+  font-family: Poppins;
+  font-size: 20px;
+}
+
+.bouquet {
+  padding: 10px;
+  width: 200px;
+  font-family: Poppins;
+  cursor: pointer;
+  position: relative;
+}
+
+.bouquet::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.465);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.bouquet:hover::before {
+  opacity: 1;
+}
+
+.nom-bouquet {
+  font-size: 25px;
+}
+
+.prix-sans-remise {
+  font-size: 18px;
+  text-decoration: line-through;
+  text-decoration-position: middle;
+  color: green;
+}
+
+.prix-avec-remise {
+  font-size: 20px;
+}
+
+.top-messsage {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 300px;
+  padding: 10px;
+  height: 80px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.328);
+  background: white;
+}
+
+#nbMonth {
+  width: 250px;
+  outline: none;
+  border: 1px rgba(0, 0, 0, 0.498) solid;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 5px 20px;
+  color: white;
+  font-family: Poppins;
+}
+
+#confirm {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgb(23, 154, 23);
+}
+
+#cancel {
+  position: absolute;
+  bottom: 10px;
+  right: 105px;
+  background: rgb(237, 30, 30);
+}
